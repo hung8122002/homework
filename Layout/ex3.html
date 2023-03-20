@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            border: 3px solid;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            text-align: center;
+        }
+        .header {
+            padding: 10px;
+            width: 100%;
+            height: 56px;
+            border: 2px solid blue;
+        }
+        .menu {
+            padding: 10px;
+            width: 30%;
+            height: 150px;
+            border: 2px solid blue;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .title {
+            padding: 10px;
+            height: 56px;
+            width: 100%;
+            border: 2px solid blue;
+        }
+        .image, .description {
+            padding: 10px;
+            height: calc(100% - 66px);
+            width: calc(50% - 5px);
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">THIS IS A HEADER</div>
+        <div class="menu">MENU 
+            <br>************
+            <br>************
+            <br>************
+            <br>************
+        </div>
+        <div class="content">
+            <div class="title">SOME TEXT</div>
+            <div class="image">AN IMAGE</div>
+            <div class="description">MORE TEXT</div>
+        </div>
+    </div>
+</body>
+</html>

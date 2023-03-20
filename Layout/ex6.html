@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      #Container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      #Container > div {
+        background-color: #e8e8e8;
+      }
+
+      #Container .Content__item--1 {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      #Container .Content__item--2 {
+        line-height: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .Content__item--2 .list_item {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+
+      .Content__item--3 {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        height: 150px;
+        margin-bottom: 20px;
+      }
+
+      .Content__item--4 {
+        background-color: white !important;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        height: 150px;
+        margin-bottom: 30px;
+      }
+
+      .Content__item--4 > div {
+        background-color: #e8e8e8;
+        flex-basis: calc(100% / 3);
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+      }
+
+      .Content__item:last-child {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Container">
+      <div class="Content__item Content__item--1"><h1>Logo</h1></div>
+      <div class="Content__item Content__item--2">
+        <ul class="Content__item--2 list_item">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="Content__item Content__item--3">Feature</div>
+      <div class="Content__item Content__item--4">
+        <div class="Content__item--4__Item">Column One</div>
+        <div class="Content__item--4__Item">Column Two</div>
+        <div class="Content__item--4__Item">Column Three</div>
+      </div>
+      <div class="Content__item Content__item--5">@Copyright 2011</div>
+    </div>
+  </body>
+</html>

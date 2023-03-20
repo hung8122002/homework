@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .header {
+            border: 2px solid;
+        }
+        .contain {
+            padding: 12px;
+            display: flex;
+            border: 2px solid;
+            flex-direction: column;
+            row-gap: 12px;
+            border-top: none;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            column-gap: 12px;
+        }
+        .item {
+            border: 2px solid;
+            height: 56px;
+            width: 100%;
+            background-color: yellow;
+        }
+        .item1 {
+            width: 35%;
+            background-color: palevioletred;
+        }
+        .item2 {
+            width: 65%;
+            background-color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">Mock 1</div>
+    <div class="contain">
+      <div class="row">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+      </div>
+      <div class="row">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+      </div>
+      <div class="row">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+      </div>
+      <div class="row">
+        <div class="item"></div>
+      </div>
+    </div>
+  </body>
+</html>

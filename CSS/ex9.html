@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: brown;
+      }
+      .contain {
+        background-color: white;
+        border-radius: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        overflow: hidden;
+        height: 400px;
+      }
+      .head {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 8px;
+      }
+      .content {
+        padding: 0 16px;
+      }
+      select {
+        height: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      input[type="submit"] {
+        background-color: red;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="head">TIP CALCULATOR</div>
+      <div class="content">
+        <p>How much was your bill ?</p>
+        $ <input type="text" placeholder="Bill Amount" />
+        <p>How was your service?</p>
+        <select name="" id="">
+          <option value="">--<big>Choose an Option</big>--</option>
+        </select>
+        <p>How many people are sharing the bill?</p>
+        <input type="text" placeholder="Number of people" /> people <br />
+        <br />
+        <input type="submit" value="CALCULATE!" />
+      </div>
+    </div>
+  </body>
+</html>

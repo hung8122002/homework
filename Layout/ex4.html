@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container div {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid blue;
+        background-color: rgb(142, 142, 255);
+      }
+      .container .heading {
+        padding: 30px;
+      }
+      .container {
+        display: grid;
+        gap: 10px;
+      }
+      .content {
+        border: none !important;
+        background-color: #fff !important;
+        padding: 0 !important;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+      }
+      .content .icon {
+        padding: 20px;
+      }
+      .container .footer {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bar">Navigation bar</div>
+      <div class="heading">Big heading</div>
+      <div class="content">
+        <div class="icon">Feature icon</div>
+        <div class="icon">Feature icon</div>
+        <div class="icon">Feature icon</div>
+        <div class="icon">Feature icon</div>
+        <div class="icon">Feature icon</div>
+        <div class="icon">Feature icon</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
